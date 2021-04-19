@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family:Verdana;
+  }
+  h2{
+      color: #3981ce;
+      padding:0 20px;
+      width:60%;
+  }
+  header{
+    /*background-color:lightblue;*/
+    padding:15px;
+    text-align:center;
+  }
+  #greet{
+      color: black;
+  }
+  main {
+    overflow:auto;
+  }
+  nav {
+    /* float:left; */
+    width:60%;
+    text-align:center;
+    margin-left: 20%;
+  }
+  nav a {
+    /*background-color:#e5e5e5;*/
+    padding:8px;
+    margin-top:7px;
+    display:block;
+    width:100%;
+    color:black;
+    border-style: solid;
+  }
+  p{
+    float:left;
+    padding:0 20px;
+  }
+
+  footer{
+    /*background-color:#e5e5e5;*/
+    text-align:center;
+    padding:10px;
+    margin-top:7px;
+  }
+  @media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    nav, section, aside {
+      width:100%;
+    }
+  }
