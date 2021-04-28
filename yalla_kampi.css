@@ -3,7 +3,7 @@
   }
   body {
     font-family:Verdana;
-    color:#aaaaaa;
+    color:black;
   }
   header{
     background-color:#ffffff;
@@ -21,6 +21,12 @@
     float:left;
     width:20%;
     text-align:center;
+    margin-left: 10px;
+  }
+
+  nav h6{
+    color:black;
+    padding:8px;
   }
 
   nav a {
