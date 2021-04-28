@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="utf-8" />
+	<title>Yalla Kampi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="yalla_kampi.css" />
+	
+    </head>
+    <body>
+	<header>
+		<h1>⛺Yalla Kampi ⛺</h1>
+		<hr>
+			<label for="name"> Enter Your Name Here : </label>
+			<input type="text" id="name" name="name" requiredminlength="3" maxlength="20" size="10">
+			<button type="button" onclick="displayname()"> Submit </button>
+		<h1 id="greet"></h1>
+		<hr>
+		
+	</header>
+	<main>
+		<nav>
+				<p> About Us </p>
+				<p> Our Team </p>
+				<a href="https://www.linkedin.com/in/eya-frikha-145579195/">Frikha Eya</a>
+				<a href="https://www.linkedin.com/in/iyed-baouab214/">Baoueb Mohamed Iyed</a>
+				<a href="https://www.linkedin.com/in/ne%C3%AFla-damak-780877196/">Damak Neila</a>
+				<a href="https://www.linkedin.com/in/ahmed-amine-fatnassi-878264190/">Fatnassi Ahmed Amine</a>
+				<a href="https://www.linkedin.com/in/welid-ben-yahmed-084a83124/">Ben Yahmed Welid</a>
+				<p> What Do we offer ?</p>
+  		</nav>
+  		<section id="mainSection">
+			<h4 style="color:rgb(21, 75, 21)"> Let the Fun Begin .. </h4>
+			<iframe width="100%" height="400px" src="https://www.youtube.com/embed/lUzIedqQrjQ" title="YouTube video player" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<section id="materiels">
+					<h2 style="color:rgb(21, 75, 21)"> camping material </h2>
+					<div id="header" style="font-size: 40px;">TOTAL:<span  id="priceT" >0 </span> <span>$</span></div>
+    				<hr>
+    
+					<!-- first tv -->
+					<section class="tv" id="tvone">
+						<div>
+							<i class="fa fa-heart" id="like"  onclick="like()"></i> 
+							<i class="fas fa-trash" id="trash" onclick="delete_row()" ></i>
+						</div>
+						<img src="res/P52.jpg" class="Produit"> </img>
+						<div>
+							<div class="button1">   
+								<div><button type="button" id="butminus1"><i class="fas fa-minus"></i></button></div>
+								<div  value="0" id="count1" > </div>
+								<div><button type="button" name="button" id="butplus1"><i class="fas fa-plus"></i></button></div>
+							</div>
+							<div  style="font-size: 140%">
+								<span  id="price1">0 </span> <span>$</span>
+							</div>
+						</div>
+					</section>
+
+					<hr>
+					<!-- second tv -->
+					<section class="tv" id="tvtwo">
+						<div>
+							<i class="fa fa-heart" id="like1" onclick="like1()"></i> 
+							<i class="fas fa-trash" id="trash" onclick="delete_row1()"></i>
+						</div>
+						<img src="res/4T-C40AJ6KE1FB_2_Supersize.jpg" class="Produit"> </img>
+						<div>
+							<div class="button2">         
+								<div><button type="button" id="butminus2"><i class="fas fa-minus"></i></button></div>
+								<div value="0"  id="count2" ></div>
+								<div><button type="button" name="button" id="butplus2"><i class="fas fa-plus"></i></button></div>
+							</div>
+							<div  style="font-size: 140%">
+								<span  id="price2">0 </span> <span>$</span>
+							</div>
+						</div>
+
+					</section>
+					<hr>
+
+					<!-- third tv -->
+					<section class="tv" id="tvthree">
+						<div>
+							<i class="fa fa-heart" id="like2" onclick="like2()"></i> 
+							<i class="fas fa-trash" id="trash" onclick="delete_row2()" ></i>
+						</div>
+						<img src="res/smart-tv-tv-led-49-samsung-serie-6-4k-hdr-49mu6300-3-hdmi-photo193178025-12-3-12.jpg" class="Produit"> </img>
+						<div>
+							<div class="button1">
+								<div><button type="button" id="butminus3"><i class="fas fa-minus"></i></button></div>
+								<div  value="0"  id="count3" ></div>
+								<div><button type="button" name="button" id="butplus3"><i class="fas fa-plus"></i></button></div>
+							</div>
+							<div style="font-size: 140%">
+								<span  id="price3">0 </span> <span>$</span>
+							</div>
+						</div>
+						
+					</section>
+					<hr>
+
+					<!-- fourth tv -->
+
+					<section class="tv" id="tvfour">
+						<div>
+							<i class="fa fa-heart" id="like3" onclick="like3()"></i> 
+							<i class="fas fa-trash" id="trash" onclick="delete_row3()" ></i>
+						</div>
+						<img src="res/latin-en-ru7300-un65ru7300pxpa-rperspectiveblack-155492115__22142_zoom.jpg" class="Produit"> </img>
+						<div>
+							<div class="button1">
+								<div><button type="button" id="butminus4"><i class="fas fa-minus"></i></button></div>
+								<div  value="0"  id="count4" ></div>
+								<div><button type="button" name="button" id="butplus4"><i class="fas fa-plus"></i></button></div>
+							</div>
+							<div style="font-size: 140%">
+								<span  id="price4">0 </span> <span>$</span>
+							</div>
+						</div>
+						
+					</section>
+					<hr>
+
+					<!-- 5 éme télevision -->
+					<section class="tv" id="tvfive">
+						<div>
+							<i class="fa fa-heart" id="like4" onclick="like4()"></i> 
+							<i class="fas fa-trash" id="trash" onclick="delete_row4()" ></i>
+						</div>
+						<img src="res/samsung_ue75nu8005txxc_s1804244407806B_161605366.jpg" class="Produit" > </img>
+						<dic>
+							<div class="button1">
+								<div><button type="button" id="butminus5"><i class="fas fa-minus"></i></button></div>
+								<div  value="0"  id="count5" ></div>
+								<div><button type="button" name="button" id="butplus5"><i class="fas fa-plus"></i></button></div>
+							</div>
+							<div style="font-size: 140%">
+								<span  id="price5">0 </span> <span>$</span>
+							</div>
+						</dic>
+						
+					</section>
+
+
+
+				</section> <!-- Fermiture section Materiels -->
+
+		</section> <!-- Fermiture Main Section -->
+
+  		<aside>
+			  <div id="ads">
+				<h2 style="color:red"> ! ADs</h2>
+    			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+			  </div>
+			  <div id="tarkhyss">
+				<h3 style="color:red"> Khou4 Tarkhysek w Enty Fy Darek ! </h3>
+				<form>
+					<div class="mb-3">
+					  <label for="exampleInputEmail1" class="form-label">Email address</label>
+					  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+					  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+					</div>
+					<div class="mb-3">
+					  <label for="fullname" class="form-label">Full Name</label>
+					  <input type="name" class="form-control" id="Fullname">
+					</div>
+					<div class="mb-3">
+						<label for="destination" class="form-label"> Your Destination </label>
+						<input type="destination" class="form-control" id="destination">
+					</div>
+					<div class="mb-3">
+						<label for="cin" class="form-label"> Your CIN </label>
+						<input type="cin" class="form-control" id="cin">
+					</div>
+					<div class="mb-3">
+						<label for="duration" class="form-label"> Duration </label>
+						<input type="duration" class="form-control" id="duration">
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				  </form>
+			  </div>
+			  <div id="box">
+				  
+			  </div>
+    			
+  		</aside>
+	</main>
+	<footer>
+		&copy;&nbsp;2021&nbsp;-&nbsp;<a rel="author" href="mailto:eya.frikha@supcom.tn" id="author">Frikha Eya</a> - All rights reserved.
+	</footer>
+    </body>
+	<script src="https://kit.fontawesome.com/813d877317.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+	<script src="yalla_kampi.js"></script>
+</html>
