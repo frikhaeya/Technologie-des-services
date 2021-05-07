@@ -227,4 +227,98 @@ function delete_row4()
 }
 
 
+  //JSON
 
+  function export2txt() {
+
+    var FormInfo = /** @class */ (function () {
+        function FormInfo(email_h, name_h, cin_h, destination_h, duration_h) {
+            this.email_h = email_h;
+            this.name_h = name_h;
+            this.cin_h = cin_h;
+            this.destination_h = destination_h;
+            this.duration_h = duration_h;
+        }
+        return FormInfo;
+    }());
+
+    email_h = document.getElementById("exampleInputEmail1").value;
+    name_h = document.getElementById("Fullname").value;
+    destination_h = document.getElementById("destination").value;
+    cin_h = document.getElementById("cin").value;
+    duration_h = document.getElementById("duration").value;
+    
+    var Form = new FormInfo(email_h, name_h, cin_h, destination_h, duration_h); 
+
+    const originalData = {
+      Demandes_Autorisation: [{
+          email: Form.email_h,
+          full_name: Form.name_h,
+          cin: Form.destination_h,
+          destination: Form.cin_h,
+          duration: Form.duration_h
+        }
+      ]
+    };
+  
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([JSON.stringify(originalData, null, 2)], {
+      type: "text/plain"
+    }));
+    a.setAttribute("download", "data.txt");
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
+
+  // MAP api
+
+var kampmap = document.getElementById("map_api");
+function getLocation()
+  {
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.getCurrentPosition(showPosition,showError);
+    }
+  else{x.innerHTML="Geolocation is not supported by this browser.";}
+  }
+
+function showPosition(position)
+  {
+  var lat=position.coords.latitude;
+  var lon=position.coords.longitude;
+  var latlon=new google.maps.LatLng(lat, lon)
+  var mapholder=document.getElementById('mapholder')
+  mapholder.style.height='250px';
+  mapholder.style.width='100%';
+
+  var myOptions={
+  center:latlon,zoom:14,
+  mapTypeId:google.maps.MapTypeId.ROADMAP,
+  mapTypeControl:false,
+  navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+  };
+  var map=new google.maps.Map(document.getElementById("mapholder"),myOptions);
+  var marker=new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+  }
+
+function showError(error)
+  {
+  switch(error.code) 
+    {
+    case error.PERMISSION_DENIED:
+        kampmap.innerHTML="User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+        kampmap.innerHTML="Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+        kampmap.innerHTML="The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+        kampmap.innerHTML="An unknown error occurred."
+      break;
+    }
+  }
+
+  
