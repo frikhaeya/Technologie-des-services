@@ -5,3 +5,7 @@ l'idée du projet: Une plateforme pour les amateurs de camping et qui sera doté
 Nous avons développé la partie Nav contenant toutes les informations qui concerne le projet (but, membres de l'équipe, ce qu'on offre...) Nous avons aussi ajouté une vidéo pour voir un peu plus clair le projet. Nous avons aussi décidé d'ajouter une section dédiée aux pubs des partenaires et sponsors pour avoir un effet plus réaliste au projet. 
 
 Vu qu'il existe une section e-commerce, nous avons ajouté l'image de produits ainsi qu'un calculateur de montant à travers JavaScript (Nous avons utilisé la balise div pour mieux se faire à ce sujet, on espère que ça sera acceptable). Enfin, on a eu recours à FontAwesome et à Bootstrap en ce qui concerne le design.
+
+- La 3 éme semaine
+  -> On a ajouté une API de GEOLOCALISATION + MAP pour satisfaire un des services que nous proposons
+  -> On a utilisé "JSON" pour enregistrer les données des formulaires remplis dans un fichier à part sur l'ordinateur
