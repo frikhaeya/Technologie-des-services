@@ -1,0 +1,38 @@
+<<!DOCTYPE html>
+
+<html>
+<head>
+
+</head>
+<body>
+
+
+<input  type="text" id="txt" size="100" >
+<input type="button" id="sendBtn" value="Send" onclick="sendMessage();">
+<input type="button" id="closeBtn" value="Close" onclick="closeSocket();">
+Message: <br>
+<div id="messages"></div>
+
+<script type="text/javascript">
+var webSocket=new WebSocket("ws://localhost:8080/ChatWebSocket/chat");
+
+webSocket.onmessage=function (event){
+var	messages=document.getElementById('messages');
+messages.innerHTML+=event.data;
+};
+	
+
+
+
+function sendMessage(){
+	var txt=document.getElementById('txt');
+	webSocket.send(txt.value);
+
+	
+};
+function closeSocket(){
+	webSocket.close();
+}
+</script>
+</body>
+</html>

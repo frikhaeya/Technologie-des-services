@@ -1,0 +1,55 @@
+body {
+	font: 11px/1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 145%;
+	color: #804040;
+}
+
+h2 {
+	font-size: 130%;
+}
+
+h3 {
+	font-size: 115%;
+}
+
+h4 {
+	font-size: 100%;
+}
+
+#toc .even {
+	background-color: #d6bba7;
+}
+
+.small {
+	font-size: 60%;
+}
+
+.articleTitle {
+	font-family:"Times New Roman", serif;
+	font-weight: bold;
+	font-size: 164%;
+	text-align: center;
+	color: #804040;
+}
+
+.content {
+	font-family:"Times New Roman", serif;
+}
+
+pre {
+	background-color: #e4d2b8;
+	padding: 16px 0px 10px 8px;
+	margin: 6px 8px 0px 8px;
+}
+
+.speaker {
+	font-style: italic;
+}
+
